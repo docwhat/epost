@@ -1,0 +1,44 @@
+#summary Components of epost
+
+= Introduction = 
+
+ePost is broken into several parts:
+ * reflector
+ * user web interface
+ * admin cli interface
+ * admin web interface
+
+Each of these parts is a separate product and can be replaced with
+something completely different.
+
+In addition, there is the non-replacable database that store the
+lists and the users.
+
+= Reflector =
+
+This is the most important part.  It accepts an email from the MTA
+(sendmail, postfix, whatever), looks at the headers to calculate the
+mailing lists it is destined for, and then sends it to the correct
+users.
+
+= User Web Interface =
+
+This is simply a nice web interface to the database to allow easy
+subscription and unsubscription.
+
+= Admin CIL interface =
+
+This is a CLI interface for managing the mailing lists and users.
+
+= Admin Web interface = 
+
+A pretty web interface for managing the mailing lists and users.
+
+#summary One-sentence summary of this page.
+
+= The database =
+
+The is the most important part.  It includes:
+ * The description of all the mailing lists on this server.
+ * The list of all users that subscribe to one or more mailing lists on the server.
+ * Options and configuration settings used by the base software or plugins.
